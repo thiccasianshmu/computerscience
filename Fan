@@ -1,0 +1,76 @@
+public class Fan {
+
+	private int speed;
+	private double radius;
+	private String color;
+  private boolean stat;
+  
+	public Fan() {
+
+		speed = 1;
+		stat = false;
+		radius = 5;
+		color = "blue";
+
+	}
+
+	public int getSpeed() {
+		return this.speed;
+	}
+
+	public void setSlow() {
+		this.speed = 1;
+	}
+
+	public void setMedium() {
+		this.speed = 2;
+	}
+
+	public void setFast() {
+		this.speed = 3;
+	}
+
+public double getRadius() {
+		return this.radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public boolean getStat() {
+		return stat;
+	}
+
+	public void setStat(boolean setting) {
+		this.stat = setting;
+	}
+
+
+	public String toString() {
+
+		String info = "";
+
+		if (getStat() == true) {
+    
+			info = "Fan speed: " + getSpeed() + "\nColor: " + getColor() + "\nRadius: " + getRadius();
+
+		} else {
+
+			info = "Fan speed: Fan is off!" + "\nColor: " + getColor() + "\nRadius: " + getRadius();
+      
+		}
+    
+		return info;
+
+	}
+
+}
